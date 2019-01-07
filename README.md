@@ -7,6 +7,6 @@ Basically when you run this program it will ask if you will want to input a rati
 If you did type 'y' then it will ask you to input a rating, an integer, then ask you if you want to add another day. All numbers are saved to a textfile and will leave off from the last day you inputted. 
 You must do it day by day.
 
-There is no search feature or start from specific date, yet. Right now it starts from whenever day 0 is and stops after . You can modify that by changing the x-axis min and max values and the start values.
+There is no search feature or start from specific date, yet. Right now it starts from whenever day 0 is and stops after . You can modify that by changing the x-axis min and max values and the start values. Also would probably be cool to make it more colorful in the future.
 
 This only works on Python 3.6 for me.

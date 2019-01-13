@@ -43,7 +43,7 @@ runnormalinput(start)
 runfromdatabase(start, date, rate)
 
 #here our date range is defined. This goes from day 0 to 365, it starts arbitrarily. You can modify it with any integer.
-plt.xlim(right = 365)
+plt.xlim(right = len(rate))
 plt.xlim(left = 0)
 
 plt.plot(date, rate)

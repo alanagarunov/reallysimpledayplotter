@@ -9,4 +9,6 @@ You must do it day by day.
 
 It is now a bit more colorful with the helpful included styling of the library. You can now search for specfic days, modifying a day should be a simple addition to be make in the future.
 
+I included a data.txt to use to run the program, you will see just how simple it really is. Neat isn't it.
+
 This only works on Python 3.6 for me.

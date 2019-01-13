@@ -1,10 +1,14 @@
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 import numpy as np   #why import this if you're not going to use it?? Well its recommended to use it instead of lists.
 
 #initial constants
 start = 0
 date = []
 rate = []
+plt.style.use('fivethirtyeight')  #styling package used, one of the defaults
+mpl.rcParams['font.size'] = 10    #the text kinda went off screen, had to change
+mpl.rcParams['figure.subplot.bottom'] = 0.11  #ditto for above
 
 def runnormalinput(start):
 	while True:
@@ -15,6 +19,16 @@ def runnormalinput(start):
 			with open("data.txt", 'a', encoding = 'utf-8') as s:     #replace data.txt with the file path of your file
 				s.write(str(j))
 				s.write("\n")
+		elif i == 's':
+			count = 0;
+			ans = int(input("Which day would you like to search for? "))
+			with open("data.txt", 'r', encoding = 'utf-8') as n:    #notice it is open as read only
+				for days in n:
+					if count == ans:
+						print("Todays ranking was: " + days)
+						break
+					else:
+						count = count + 1
 		else:
 			break
 		
